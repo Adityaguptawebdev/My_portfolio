@@ -1,0 +1,775 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.navbar a{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
+  
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #FDE957;
+    font-size: 24px;
+    
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+ .home{ 
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 10% 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.home-text h3{
+    font-size: 1rem;
+    margin-left: 20px;
+}
+.home-text h1{
+   font-size: 3rem;
+   font-weight: 800;
+   margin: 20px 20px 20px;
+   line-height: 1.2;
+   
+}
+.home img{
+   width: 90%;
+   height: 100%;
+   border-radius: 50px;
+   margin-left: 50px;
+   
+   margin-top: 50px;
+  
+}
+
+
+
+span{
+   color: var(--main-color);
+}
+
+.home-text p{
+   font-size: var(--p-font);
+   color: var(--other-color);
+   width: 500px;
+   max-width: 100%;
+  
+}
+.social-media{
+   margin-bottom: 40px;
+   font-size: var(--h2-font);
+
+}
+.social-media i{
+   color: var(--main-color);
+   display: inline-block;  
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   box-shadow: 0 0 20px transparent;
+   transition: .5s;
+}
+.social-media i:hover{
+   transform: scale(1.1);
+  
+}
+.btn{
+   display: inline-block;
+   padding: 11px 26px;
+   background: var(--main-color);
+   color: var(--bg-color);
+   border: 2px solid var(--main-color);
+   border-radius: 8px;
+   font-size: 18px;
+   font-weight: 800;
+   background-color: #FDE957;
+}
+.btn:hover{
+   background: transparent;
+   color: var(--other-color);
+   box-shadow: 0 0 20px var(--main-color);
+}
+.btn2{
+   background: transparent;
+   color: var(--main-color);
+   padding: 11px 26px;
+   border: 2px solid var(--main-color);
+   border-radius: 8px;
+   margin-left: 13px;
+   transition: .5s;
+   font-size: 20px;
+   font-weight: 800;
+ background-color: #FDE957;
+}
+.btn2:hover{
+   background: var(--main-color);
+   color: var(--bg-color);
+   box-shadow: 0 0 20px var(--main-color);
+   transform: scale(1.1);
+   border-color: #0e0c02;
+}
+header.sticky{
+   background: var(--bg-color);
+   box-shadow: 0 .1rem 1rem rgba(0,0,0,0.2);
+   padding:16px 13%
+}
+ */
+
+
+
+
+.about-me{
+    background: var(--secondbg-color);
+    padding: 50px 10% 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;
+}
+.about-img img{
+ 
+  
+    max-width: 80%;
+    
+    border-radius: 20%;
+    object-fit: cover;
+    
+}
+.about img {
+    width: 100%;
+    transition: 0.6s all ease-in-out;
+}
+
+.about-text h1{
+     font-size: var(--h1-font);
+     line-height: 1;
+     margin-top: 20px;
+    margin-left: 20px;
+}
+.about-text p{
+    margin-bottom: 50px;
+    line-height: 32px;
+    font-size: var(--p-font);
+    color: var(--text-color);
+    padding: 40px;
+}
+.btn3{
+    display: inline-block;
+    padding: 11px 26px;
+    margin-top: 20px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.btn3:hover{
+    background: transparent;
+    color: var(--other-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+
+
+/* Your existing styles for the About section */
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .about-image {
+        max-width: 100%; /* Ensure the image is fully responsive */
+    }
+
+    .about-content {
+        text-align: center; /* Center-align the content on smaller screens */
+    }
+    
+    .about-content h2 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+    
+    .about-content p {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+        line-height: 1.5; /* Increase line height for better readability */
+        margin-bottom: 20px; /* Add some spacing between paragraphs */
+    }
+}
+
+/* CSS for mobile and laptop responsiveness */
+
+/* General styles for the "About Me" section */
+.about-me {
+    padding: 20px; /* Add some padding around the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-img img {
+    max-width: 100%; /* Ensure the image is fully responsive */
+}
+
+.about-text {
+    margin-top: 20px; /* Add some space between the image and text */
+}
+
+.about-text h1 {
+    font-size: 28px; /* Increase the font size for larger screens */
+}
+
+.about-text p {
+    font-size: 16px; /* Font size for both mobile and laptop */
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.about-text span {
+    font-weight: bold; /* Make the email and phone text bold */
+}
+
+.btn3 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* Add space between the text and the button */
+    font-size: 18px; /* Increase button font size */
+    text-decoration: none;
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
+    color: #fff;
+    
+    border-radius: 5px;
+}
+
+/* Media query for laptop screens */
+@media screen and (min-width: 768px) {
+    .about-me {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .about-img {
+        flex: 1;
+        margin-right: 20px; /* Add space between image and text on laptops */
+        text-align: center;
+    }
+
+    .about-text {
+        flex: 2;
+        margin-top: 0; /* Remove margin between image and text on laptops */
+        text-align: left;
+    }
+
+    .about-text h1 {
+        font-size: 36px; /* Increase title font size for laptops */
+    }
+
+    .about-text p {
+        font-size: 18px; /* Increase paragraph font size for laptops */
+    }
+}
+
+
+
+:root{
+    --text-color:#fff;
+    --bg-color:#000000;
+    --secondbg-color:#22282f;
+    --main-color:#ffc813;
+    --other-color:#d9e2ef;
+
+    --h1-font:3rem;
+    --h2-font:2rem;
+    --p-font:1.1rem;
+}
+body{
+    color: var(--other-color);
+    background: var(--bg-color);
+}
+
+
+
+
+/* CSS for mobile and laptop responsiveness */
+
+/* General styles for the "Home" section */
+.home {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order for mobile */
+    align-items: center;
+    text-align: center;
+}
+
+.home-text {
+    text-align: center;
+    margin-left: 40px;
+    padding: 30px;
+}
+
+.home-text h3 {
+    font-size: 24px; /* Font size for mobile */
+}
+
+.home-text h1 {
+    font-size: 36px; /* Font size for mobile */
+    margin: 10px 0;
+}
+
+.home-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    font-size: 24px; /* Font size for mobile */
+    margin-right: 10px;
+}
+
+.home-btn {
+    margin-top: 20px; /* Add space between the text and buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px; /* Font size for mobile */
+    text-decoration: none;
+   
+  
+    
+    border-radius: 5px;
+    margin-right: 10px;
+    color: var(--text-color);
+        border-color: var(--main-color);
+        background-color: transparent;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px; /* Font size for mobile */
+    text-decoration: none;
+   
+   background-color: rgba(0, 0, 0, 0.857);
+    color:#f8dc0d;
+    
+    border-radius: 5px;
+}
+
+/* Media query for laptop screens */
+@media screen and (min-width: 768px) {
+    .home {
+        flex-direction: row; /* Return to a two-column layout for laptops */
+        justify-content: space-between;
+    }
+
+    .home-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .home-img {
+        flex: 1;
+    }
+
+    .home-text h3 {
+        font-size: 28px; /* Font size for laptops */
+    }
+
+    .home-text h1 {
+        font-size: 48px; /* Font size for laptops */
+    }
+
+    .home-text p {
+        font-size: 18px; /* Font size for laptops */
+    }
+
+    .social-media a {
+        font-size: 32px; /* Font size for laptops */
+    }
+
+    .home-btn {
+        margin-top: 0;
+        
+    }
+}
+
+
+
+
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin: 4.2rem;
+}
+
+
+
+
+
+/* CSS for mobile and laptop responsiveness */
+
+/* General styles for both sections */
+.skills, .project {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-text, .center-text {
+    margin-bottom: 20px;
+}
+
+/* Styles for the "Skills" section */
+.skills h1, .project h1 {
+    font-size: 36px; /* Font size for both mobile and laptop */
+}
+
+.skills-main, .project-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-center {
+    flex: 1;
+    max-width: 100%; /* Ensure content fits within the container */
+}
+
+.skills-bar, .row {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left on both mobile and laptop */
+}
+
+.info p {
+    font-size: 16px; /* Font size for both mobile and laptop */
+    margin: 5px 0;
+}
+
+.bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+}
+
+/* Styles for the progress bars inside the "Skills" section */
+.bar span {
+    display: block;
+    height: 100%;
+    border-color: #0f0f0e;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    transition: width 1s; /* Smooth animation for the progress bar */
+}
+
+/* Styles for the "Portfolio" section */
+.project-content .row {
+    flex: 1;
+    max-width: 100%; /* Ensure content fits within the container */
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.row img {
+    max-width: 100%; /* Ensure images are fully responsive */
+    height: auto;
+}
+
+.row-text {
+    margin-top: 10px;
+}
+
+.row-text h4 {
+    font-size: 18px; /* Font size for both mobile and laptop */
+}
+
+.row-icon {
+    margin-top: 10px;
+}
+
+.row-icon i {
+    font-size: 24px; /* Font size for both mobile and laptop */
+    color: #333;
+}
+
+
+
+
+
+
+
+/* Media query for laptop screens */
+@media screen and (min-width: 768px) {
+    .skills, .portfolio {
+        text-align: left; /* Align text to the left on laptops */
+    }
+
+    .skills h1, .project h1 {
+        font-size: 48px; /* Font size for laptops */
+    }
+
+    .skills-center, .project-content .row {
+        flex: 1;
+        max-width: 45%; /* Adjust the width for laptops */
+    }
+
+    .skills-bar .info p {
+        font-size: 18px; /* Font size for laptops */
+    }
+
+    .bar span {
+        transition: width 0.5s; /* Faster animation for the progress bar on laptops */
+    }
+
+    .row-text h4 {
+        font-size: 24px; /* Font size for laptops */
+    }
+
+    .row-icon i {
+        font-size: 32px; /* Font size for laptops */
+    }
+}
+
+
+
+
+
+.skills-bar .bar .html{
+    width: 72%;
+    animation:Web Development (HTML, CSS, JS, MY SQL, MONGO DB,  ) 2s;
+}
+.skills-bar .bar .css{
+    width: 65%;
+    animation: css 3s;
+}
+.skills-bar .bar .js{
+    width: 49%;
+    animation: js 4s;
+}
+.skills-bar .bar .mysql{
+    width: 58%;
+    animation: mysql 5s;
+}
+.skills-bar .bar .info{
+    width: 72%;
+    animation: OOPS 5s;
+}
+
+
+
+.portfolio{
+    text-align: center;
+   
+}
+.center-text h1{
+    font-size: var(--h1-font);
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin: 4.2rem;
+}
+.row img{
+     height: auto;
+     width: 100%;
+     border-radius: 28px;
+     margin-bottom: 1.4rem;
+}
+.row{
+    background: #22282f;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 20px;
+}
+.row:hover{
+    transform: scale(1.1);
+}
+.row i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    font:27px;
+    border-radius: 50%;
+    color: var(--text-color);
+    /* background: #075fe4; */
+
+}
+.contact{
+    background: var(--secondbg-color);
+    width: 100%;
+}
+.contact-text{
+    text-align: center;
+    font-size: var(--h2-font);
+}
+.contact-text input{
+    border-color: #22282f;
+}
+.contact form{
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    padding-bottom: 2rem;
+    
+}
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    margin-bottom: .8rem;
+    
+    border-radius: 5px;
+    padding: .7rem;
+  
+
+}
+.contact form textarea{
+    resize: none;
+}
+
+/* Media query for laptop screens */
+@media screen and (min-width: 768px) {
+    .contact {
+        text-align: left; /* Align text to the left on laptops */
+    }
+
+    .contact-text h1 {
+        font-size: 48px; /* Font size for laptops */
+    }
+
+    /* Adjust the form input and textarea width for laptops */
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    form textarea {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 24px; /* Font size for laptops */
+        
+    }
+}
